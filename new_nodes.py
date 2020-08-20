@@ -20,6 +20,7 @@ class LinkedList:
     def get_head(self):
         return self.head
 
+    #insert at the front(head)
     def push(self,new_year,new_highlight):
         new_node = Node(new_year,new_highlight)
         new_node.next = self.head
@@ -33,6 +34,7 @@ class LinkedList:
         new_node.next = prev_node.next
         prev_node.next = new_node
 
+    # append at the end
     def append(self, new_year, new_highlight):
         new_node = Node(new_year,new_highlight)
         if self.head is None:
